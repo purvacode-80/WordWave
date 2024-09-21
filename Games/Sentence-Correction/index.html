@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Sentence Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menubar -->
+    <nav class="navbar">
+        <div class="logo"> 
+            <ul> 
+                <li> <img src="logo.png" id="logo-img"> </li>
+                <li> <span id="logo-text"> WordWave </span> </li>
+            </ul> 
+        </div>
+        <ul class="menu">
+            <li> <a href="#"> Home </a> </li>
+            <li class="submenu">
+                <a href="#courses"> Courses </a>
+                <ul class="dropdown">
+                    <li> <a href="#"> Grammar Lessons </a> </li>
+                    <li> <a href="#"> Vocabulary </a> </li>
+                    <li> <a href="#"> Reading Skills </a> </li>
+                    <li> <a href="#"> Writing Skills </a> </li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="#tools"> Tools </a>
+                <ul class="dropdown">
+                    <li> <a href="#"> Word Dictionary </a> </li>
+                    <li> <a href="#"> Spell Checker </a> </li>
+                    <li> <a href="#"> Multi-Language Translator </a> </li>
+                    <li> <a href="#"> Text-to-Speech and Speech-to-Text Convertor </a> </li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="#tools"> Games </a>
+                <ul class="dropdown">
+                    <li> <a href="#"> Word Guessing </a> </li>
+                    <li> <a href="#"> Sentence Correction </a> </li>
+                    <li> <a href="#"> Word Completion </a> </li>
+                    <li> <a href="#"> Word Search Puzzle </a> </li>
+                    <li> <a href="#"> Typing Test </a> </li>
+                    <li> <a href="#"> Sentence Completion </a> </li>
+                    <li> <a href="#"> English Quiz </a> </li>
+                </ul>
+            </li>
+            <li><a href="#about"> About </a></li>
+        </ul>
+    </nav>
+
+<div class="content">
+     <!  Insert webpage main content here -->
+</div>
+
+    <div class="game-container">
+        <h1>Grammar Sentence Game</h1>
+        <p class="instructions">Identify and correct the grammar mistakes in the sentence below:</p>
+        <div id="sentence-container">
+            <table>
+                <tr>
+                    <th>Incorrect Sentence</th>
+                </tr>
+                <tr>
+                    <td><p id="sentence"></p></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="user-input" placeholder="Type the correct sentence here...">
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        <center>
+                        <button onclick="checkAnswer()">Submit</button>
+                    </center>
+                    </td>
+                
+                </tr>
+            </table>
+            <p id="feedback"></p>
+            <p id="correct-answer" class="correct-answer"></p>
+        </div>
+        <button class="next-button" onclick="nextSentence()">Next Sentence</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
