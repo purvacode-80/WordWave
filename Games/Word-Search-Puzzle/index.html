@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Search Puzzle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menubar -->
+  <nav class="navbar">
+    <div class="logo"> 
+        <ul> 
+            <li> <img src="logo.png" id="logo-img"> </li>
+            <li> <span id="logo-text"> WordWave </span> </li>
+        </ul> 
+    </div>
+    <ul class="menu">
+        <li> <a href="#"> Home </a> </li>
+        <li class="submenu">
+            <a href="#courses"> Courses </a>
+            <ul class="dropdown">
+                <li> <a href="#"> Grammar Lessons </a> </li>
+                <li> <a href="#"> Vocabulary </a> </li>
+                <li> <a href="#"> Reading Skills </a> </li>
+                <li> <a href="#"> Writing Skills </a> </li>
+            </ul>
+        </li>
+        <li class="submenu">
+            <a href="#tools"> Tools </a>
+            <ul class="dropdown">
+                <li> <a href="#"> Word Dictionary </a> </li>
+                <li> <a href="#"> Spell Checker </a> </li>
+                <li> <a href="#"> Multi-Language Translator </a> </li>
+                <li> <a href="#"> Text-to-Speech and Speech-to-Text Convertor </a> </li>
+            </ul>
+        </li>
+        <li class="submenu">
+            <a href="#tools"> Games </a>
+            <ul class="dropdown">
+                <li> <a href="#"> Word Guessing </a> </li>
+                <li> <a href="#"> Sentence Correction </a> </li>
+                <li> <a href="#"> Word Completion </a> </li>
+                <li> <a href="#"> Word Search Puzzle </a> </li>
+                <li> <a href="#"> Typing Test </a> </li>
+                <li> <a href="#"> Sentence Completion </a> </li>
+                <li> <a href="#"> English Quiz </a> </li>
+            </ul>
+        </li>
+        <li><a href="#about"> About </a></li>
+    </ul>
+</nav>
+
+<div class="content">
+<!  Insert webpage main content here -->
+</div>
+
+  <div class="container">
+    <div class="word-list">
+      <h3>Find These Words:</h3>
+      <ul id="wordsToFind"></ul>
+      <div class="button-container">
+        <button id="resetBtn">Reset</button>
+        <p>Select each letter</p>
+      </div>
+        <p id="message"></p>
+    </div>
+    <div class="puzzle-grid">
+      <h1>Word Search Puzzle</h1>
+      <table id="wordSearchTable"></table>
+    </div>
+  </div>
+ <script src="script.js"></script>
+</body>
+</html>
