@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+/* Style for the letters with jumping animation */
+.letter {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    color:black;
+    background-color: khaki;
+    display: inline-block;
+    width : 40px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(178, 240, 246);
+    animation: jump 0.8s ease infinite ;
+}
+
+/* Add delay for each letter's jumping animation */
+.letter:nth-child(1) { animation-delay: 0s; }
+.letter:nth-child(2) { animation-delay: 0.1s; }
+.letter:nth-child(3) { animation-delay: 0.2s; }
+.letter:nth-child(4) { animation-delay: 0.3s; }
+.letter:nth-child(5) { animation-delay: 0.4s; }
+.letter:nth-child(6) { animation-delay: 0.5s; }
+.letter:nth-child(7) { animation-delay: 0.6s; }
+.letter:nth-child(8) { animation-delay: 0.7s; }
+
+/* Jumping animation for letters */
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+#off-loader
+{
+    display: none;
+}
+
+.content {
+    margin-top : 30px;
+    animation: blink-border 1s infinite;
+    background: linear-gradient(45deg, rgb(180, 58, 196), rgb(255, 208, 216), rgb(167, 180, 253),rgb(200, 139, 253),rgb(253, 168, 208));
+    background-size: 400% 400%;
+    animation: gradient-bg 5s ease infinite;
+}
+
+@keyframes gradient-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    position: fixed;
+    /* Makes the menubar stay fixed */
+    top: 0;
+    /* Position at the top of the page */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: floralwhite;
+    color: black;
+    margin-bottom : 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo ul
+{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+#logo-text {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+/* Menu list styling */
+.menu {
+    color: black;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Individual menu items */
+.menu li {
+    margin: 0 20px;
+    position: relative;
+    /* Needed for the submenu */
+    display: inline-block;
+}
+
+/* Links inside the menu items */
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 25px;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Hover effect for menu items */
+menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.submenu .dropdown {
+    display: none;
+    /* Hide submenu by default */
+    position: absolute;
+    top: 100%;
+    /* Position it directly below the parent menu item */
+    left: 0;
+    background-color: rgb(45, 44, 44);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Submenu items */
+.submenu .dropdown li {
+    width: 200px;
+    /* Set width for submenu items */
+}
+
+.dropdown a:hover {
+    background-color: rgb(126, 188, 254);
+    color : black;
+    text-decoration: underline;
+}
+
+
+/* Submenu links */
+.submenu .dropdown a {
+    /* padding: 10px; */
+    background-color: rgb(45, 44, 44);
+    color: white;
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 18px;
+    display: block;
+}
+
+/* Show submenu on hover */
+.submenu:hover .dropdown {
+    display: block;
+}
+
+
+.hero-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    border-right: 3px solid #333;
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    overflow: hidden;
+    /* Ensures that hidden text remains hidden */
+    animation: typing 8s steps(25) infinite, cursor 0.3s step-end infinite;
+    /* Typing and blinking caret animation */
+}
+
+.hero-section h2
+{
+    font-size: 30px;
+}
+
+@keyframes typing {
+    0%
+    {
+        width : 0%;
+    }
+    50%
+    {
+        width : 50%;
+    }
+}
+
+/* Blinking caret animation */
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.hero-section p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.btn {
+    background-color: #fa4521;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-family: Franklin Gothic;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(64, 28, 247);
+    color: beige;
+    box-shadow: 0 2px 10px rgb(180, 209, 247);
+    transition: transform 0.3s ease;
+}
+
+.section {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    animation: fadeIn 1s ease-out;
+}
+
+.modules-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.modules {
+    background-color: black;
+    color: white;
+    font-family: "Itim";
+    font-weight: 400;
+    font-size: 30px;
+    padding: 25x;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 5px 15px rgb(255, 249, 209);
+    transition: transform 0.3s ease;
+}
+
+.modules:hover {
+    transform: translateY(-15px);
+}
+
+i {
+    background-color: cornsilk;
+    padding: 10px;
+    border-radius: 50%;
+    color : indigo;
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+.modules ul {
+    list-style: none;
+    font-family: Cambria;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    html,
+    body {
+        width: 1024px;
+        /* Forces the content to be wider like a desktop site */
+        overflow-x: scroll;
+        /* Allow horizontal scrolling */
+    }
+}
