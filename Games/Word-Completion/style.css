@@ -1,0 +1,236 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e8f7fd;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 450px;
+    transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
+    border: 3px solid #8fb5dd;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    background-color: #c9effa;
+    border-color: #f45b69;
+}
+
+h1 {
+    color: #1a1a1a;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.instructions {
+    font-size: 16px;
+    color: #424242;
+    margin-bottom: 20px;
+}
+
+.word-container {
+    margin-bottom: 30px;
+}
+
+.word {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.letter {
+    font-weight: bold;
+    font-size: 26px;
+    color: #1a1a1a;
+    margin: 0 8px;
+}
+
+.underline {
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid #007bff;
+    width: 30px;
+    margin: 0 8px;
+    color: black; /* Letter input color set to black */
+    font-weight: bold;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.underline:focus {
+    border-bottom-color: #17dd31;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #fd2010;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background-color: #00b309;
+    box-shadow: 0 0 10px rgba(0, 179, 9, 0.5);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.correct-word {
+    color: green; /* Correct word color set to green */
+    font-size: 18px;
+    font-weight: bold; /* Make the correct word message bold */
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.navbar {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    position: fixed;
+    /* Makes the menubar stay fixed */
+    top: 0;
+    /* Position at the top of the page */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: floralwhite;
+    color: black;
+    margin-bottom : 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo ul
+{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+#logo-text {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+
+/* Menu list styling */
+.menu {
+    color: black;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Individual menu items */
+.menu li {
+    margin: 0 20px;
+    position: relative;
+    /* Needed for the submenu */
+    display: inline-block;
+}
+
+/* Links inside the menu items */
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 25px;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Hover effect for menu items */
+menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.submenu .dropdown {
+    display: none;
+    /* Hide submenu by default */
+    position: absolute;
+    top: 100%;
+    /* Position it directly below the parent menu item */
+    left: 0;
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Submenu items */
+.submenu .dropdown li {
+    width: 200px;
+    /* Set width for submenu items */
+}
+
+.dropdown a:hover {
+    background-color: rgb(126, 188, 254);
+    color : black;
+    text-decoration: underline;
+}
+
+/* Submenu links */
+.submenu .dropdown a {
+    /* padding: 10px; */
+    background-color: black;
+    color: white;
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 18px;
+    display: block;
+}
+
+/* Show submenu on hover */
+.submenu:hover .dropdown {
+    display: block;
+}
+
