@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins :wght@400;500;700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR :wght@900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+body {
+  font-family : 'Poppins', sans-serif;
+  background : #f0f0f0;
+  display : flex;
+  justify-content : center;
+  padding : 20px;
+}
+
+.container {
+  width : 500px;
+  height: auto;
+  padding : 20px;
+  margin-top : 20px;
+  background-color : #ffffff;
+  box-shadow : 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius : 12px;
+  position : relative;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+h1 {
+  text-align : center;
+  color : #1373cc;
+  margin-bottom : 20px;
+  font-family: "Patrick Hand", cursive;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.quiz
+{
+  font-weight : 600;
+  margin : 20px , 10px;
+  color : #555;
+  height: fit-content;
+}
+
+.question {
+  font-weight: 700;
+  width: 90%;
+  color : #555;
+  margin: auto;
+  font-size : 24px;
+  margin-bottom: 10px;
+}
+
+.options {
+  margin-bottom : 30px;
+}
+
+.option {
+  font-size : 20px;
+  display : block;
+  width: 90%;
+  padding : 10px;
+  border : 1px solid #ddd;
+  text-align: center;
+  border-radius : 12px;
+  box-shadow: 4px 4px 5px -2px #6446fa9a;
+  margin: auto;
+  margin-bottom : 10px;
+  transition : background-color 0.3s, border-color 0.3s;
+}
+
+.options :hover {
+  background-color : #007bff;
+  color: #fff;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  display : inline-block;
+  padding : 12px 25px;
+  background-color : #007bff;
+  color : #fff;
+  border : none;
+  cursor : pointer;
+  font-size : 16px;
+  text-align: center;
+  border-radius : 6px;
+  transition : background-color 0.3s, transform 0.2s;
+  margin-right : 10px;
+  position: relative;
+}
+
+#retry {
+  display : inline-block;
+  display : none;
+  padding : 12px 25px;
+  background-color : #007bff;
+  color : #fff;
+  border : none;
+  cursor : pointer;
+  font-size : 16px;
+  text-align: center;
+  border-radius : 6px;
+  transition : background-color 0.3s, transform 0.2s;
+  margin-right : 10px;
+}
+
+.button :hover {
+  background-color : #0056b3;
+  transform : scale(1.05);
+}
+
+.result {
+  color : #312f2ff4;
+  margin-top : 30px;
+  font-weight : 700;
+  width : 700px;
+  margin: auto;
+  font-size: 20px;
+}
+
+.side-table {
+  width : 150px;
+  padding : 15px;
+  background-color : #ffffff;
+  box-shadow : 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius : 10px;
+  position : absolute;
+  top : 20px;
+  right : -170px;
+}
+
+.side-table h2 {
+  margin : 0 0 10px;
+  font-size : 18px;
+  color : #333;
+}
+
+.side-table p {
+  margin : 0;
+  color : #666;
+}
+
+.hide {
+  display : none;
+}
+
+#incorrect
+{
+  color : red;
+  font-family : "Permanent Marker", cursive;
+  font-weight : 100;
+  font-size : 30px;
+  align-items: center;
+}
+
+#incorrect_ans
+{
+  color : red;
+  font-family: "Aldrich", sans-serif;
+  font-weight: 500;
+  font-style: normal;  
+  font-size: 20px;
+}
+
+#correct_ans
+{
+  color : green;
+  font-family: "Aldrich", sans-serif;
+  font-weight: 500;
+  font-style: normal;  
+  font-size: 20px;
+}
+
+#score
+{
+  color : rgba(6, 217, 41, 0.899);
+  font-family : "Noto Sans KR", sans-serif;
+  font-weight : 900;
+  font-size : 25px;
+}
+
+.navbar {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  position: fixed;
+  /* Makes the menubar stay fixed */
+  top: 0;
+  /* Position at the top of the page */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: floralwhite;
+  color: black;
+  margin-bottom : 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo ul
+{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+}
+
+#logo-text {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin-left: 15px;
+}
+
+
+/* Menu list styling */
+.menu {
+  color: black;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* Individual menu items */
+.menu li {
+  margin: 0 20px;
+  position: relative;
+  /* Needed for the submenu */
+  display: inline-block;
+}
+
+/* Links inside the menu items */
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 25px;
+  padding: 10px 20px;
+  display: block;
+}
+
+/* Hover effect for menu items */
+menu a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.submenu .dropdown {
+  display: none;
+  /* Hide submenu by default */
+  position: absolute;
+  top: 100%;
+  /* Position it directly below the parent menu item */
+  left: 0;
+  background-color: black;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Submenu items */
+.submenu .dropdown li {
+  width: 200px;
+  /* Set width for submenu items */
+}
+
+.dropdown a:hover {
+  background-color: rgb(126, 188, 254);
+  color : black;
+  text-decoration: underline;
+}
+
+/* Submenu links */
+.submenu .dropdown a {
+  /* padding: 10px; */
+  background-color: black;
+  color: white;
+  font-family: Verdana;
+  font-weight: 100;
+  font-size: 18px;
+  display: block;
+}
+
+/* Show submenu on hover */
+.submenu:hover .dropdown {
+  display: block;
+}
