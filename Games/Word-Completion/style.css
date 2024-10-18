@@ -21,21 +21,28 @@ body {
 
 .container:hover {
     transform: scale(1.05);
-    background-color: #c9effa;
+    background-color: #fbf6f6;
     border-color: #f45b69;
 }
 
 h1 {
     color: #1a1a1a;
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 15px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .instructions {
-    font-size: 16px;
+    font-size: 22px;
     color: #424242;
     margin-bottom: 20px;
+}
+
+.question-text {
+    font-size: 20px;
+    font-family: Tahoma;
+    color: #1a1a1a;
+    margin-bottom: 15px;
 }
 
 .word-container {
@@ -62,7 +69,7 @@ h1 {
     border-bottom: 3px solid #007bff;
     width: 30px;
     margin: 0 8px;
-    color: black; /* Letter input color set to black */
+    color: black;
     font-weight: bold;
     outline: none;
     background-color: transparent;
@@ -83,7 +90,7 @@ h1 {
 }
 
 .button {
-    background-color: #fd2010;
+    background-color: #2472fb;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -91,6 +98,7 @@ h1 {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s, box-shadow 0.3s;
+    margin: 10px;
 }
 
 .button:hover {
@@ -105,132 +113,68 @@ h1 {
 }
 
 .correct-word {
-    color: green; /* Correct word color set to green */
+    color: green;
     font-size: 18px;
-    font-weight: bold; /* Make the correct word message bold */
+    font-weight: bold;
     margin-top: 10px;
     font-style: italic;
 }
 
-.navbar {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    position: fixed;
-    /* Makes the menubar stay fixed */
-    top: 0;
-    /* Position at the top of the page */
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: floralwhite;
-    color: black;
-    margin-bottom : 20px;
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .instructions {
+        font-size: 18px;
+    }
+
+    .question-text {
+        font-size: 18px;
+    }
+
+    .letter, .underline {
+        font-size: 22px;
+        margin: 0 5px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
 }
 
-.logo {
-    display: flex;
-    justify-content: flex-start;
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .instructions {
+        font-size: 16px;
+    }
+
+    .question-text {
+        font-size: 16px;
+    }
+
+    .letter, .underline {
+        font-size: 20px;
+        margin: 0 4px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
 }
-
-.logo ul
-{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-#logo-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 25%;
-}
-
-#logo-text {
-    font-family: "Nerko One", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    margin-left: 15px;
-}
-
-
-/* Menu list styling */
-.menu {
-    color: black;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-/* Individual menu items */
-.menu li {
-    margin: 0 20px;
-    position: relative;
-    /* Needed for the submenu */
-    display: inline-block;
-}
-
-/* Links inside the menu items */
-.menu a {
-    color: black;
-    text-decoration: none;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: italic;
-    font-size: 25px;
-    padding: 10px 20px;
-    display: block;
-}
-
-/* Hover effect for menu items */
-menu a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
-.submenu .dropdown {
-    display: none;
-    /* Hide submenu by default */
-    position: absolute;
-    top: 100%;
-    /* Position it directly below the parent menu item */
-    left: 0;
-    background-color: black;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Submenu items */
-.submenu .dropdown li {
-    width: 200px;
-    /* Set width for submenu items */
-}
-
-.dropdown a:hover {
-    background-color: rgb(126, 188, 254);
-    color : black;
-    text-decoration: underline;
-}
-
-/* Submenu links */
-.submenu .dropdown a {
-    /* padding: 10px; */
-    background-color: black;
-    color: white;
-    font-family: Verdana;
-    font-weight: 100;
-    font-size: 18px;
-    display: block;
-}
-
-/* Show submenu on hover */
-.submenu:hover .dropdown {
-    display: block;
-}
-
