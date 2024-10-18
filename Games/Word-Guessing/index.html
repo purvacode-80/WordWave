@@ -5,58 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Guessing Game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../menubar.css">
 </head>
 <body>
-    <!-- Menubar -->
-    <nav class="navbar">
-        <div class="logo"> 
-            <ul> 
-                <li> <img src="logo.png" id="logo-img"> </li>
-                <li> <span id="logo-text"> WordWave </span> </li>
-            </ul> 
-        </div>
-        <ul class="menu">
-            <li> <a href="#"> Home </a> </li>
-            <li class="submenu">
-                <a href="#courses"> Courses </a>
-                <ul class="dropdown">
-                    <li> <a href="#"> Grammar Lessons </a> </li>
-                    <li> <a href="#"> Vocabulary </a> </li>
-                    <li> <a href="#"> Reading Skills </a> </li>
-                    <li> <a href="#"> Writing Skills </a> </li>
-                </ul>
-            </li>
-            <li class="submenu">
-                <a href="#tools"> Tools </a>
-                <ul class="dropdown">
-                    <li> <a href="#"> Word Dictionary </a> </li>
-                    <li> <a href="#"> Spell Checker </a> </li>
-                    <li> <a href="#"> Multi-Language Translator </a> </li>
-                    <li> <a href="#"> Text-to-Speech and Speech-to-Text Convertor </a> </li>
-                </ul>
-            </li>
-            <li class="submenu">
-                <a href="#tools"> Games </a>
-                <ul class="dropdown">
-                    <li> <a href="#"> Word Guessing </a> </li>
-                    <li> <a href="#"> Sentence Correction </a> </li>
-                    <li> <a href="#"> Word Completion </a> </li>
-                    <li> <a href="#"> Word Search Puzzle </a> </li>
-                    <li> <a href="#"> Typing Test </a> </li>
-                    <li> <a href="#"> Sentence Completion </a> </li>
-                    <li> <a href="#"> English Quiz </a> </li>
-                </ul>
-            </li>
-            <li><a href="#about"> About </a></li>
-        </ul>
-    </nav>
-
-<div class="content">
-     <!  Insert webpage main content here -->
+<div class="logo">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.I_rDXdJ0wGj-BsD4LMbCswHaHa&pid=Api&P=0&h=220" id="logo-img" onclick="toggleMenu()">
 </div>
-
-
-    <div class="game-container">
+    <nav class="navbar">
+        <ol class="menu" id="side-menu">
+            <div class="main-nav">
+                <div>
+                <li>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.I_rDXdJ0wGj-BsD4LMbCswHaHa&pid=Api&P=0&h=220" id="logo-img" onclick="toggleMenu()">
+                </li>
+                </div>
+                    <li><a class="title" href="#">Home</a></li>
+                    <li class="submenu">
+                        <a href="#courses" class="title" class="dropdown-toggle">Courses</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Grammar Lessons</a></li>
+                            <li><a href="#">Vocabulary</a></li>
+                            <li><a href="#">Reading Skills</a></li>
+                            <li><a href="#">Writing Skills</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#tools" class="title" class="dropdown-toggle">Tools</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Word-Dictionary</a></li>
+                            <li><a href="#">Spell Checker</a></li>
+                            <li><a href="#">Multi Language Translator</a></li>
+                            <li><a href="#">Text-to-Speech & Speech-To-Text</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about" class="title">About</a></li>
+                </ol>
+    </nav>     
+<div class="container">
         <h1>Word Guessing Game</h1>
         <div class="game-details">
             <p class="hint">Hint: <span id="hint"></span></p>
@@ -68,5 +53,6 @@
         <button id="reset-btn">Reset Game</button>
     </div>
     <script src="script.js"></script>
+    <script src="../menubar.js"></script>
 </body>
 </html>
