@@ -1,0 +1,225 @@
+/* Existing CSS imports */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+/* Base styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+#game-container {
+  width: 50em;
+  height: auto;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: #1373cc;
+  margin-bottom: 20px;
+  font-family: "Patrick Hand", cursive;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.quiz {
+  font-weight: 600;
+  margin: 20px 10px;
+  color: #555;
+}
+
+.question {
+  font-weight: 700;
+  width: 90%;
+  color: #555;
+  margin: auto;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.options {
+  margin-bottom: 30px;
+}
+
+.option {
+  font-size: 20px;
+  display: block;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 4px 4px 5px -2px #6446fa9a;
+  margin: auto;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.result {
+  color: #312f2ff4;
+  margin-top: 30px;
+  font-weight: 700;
+  width: 700px;
+  margin: auto;
+  font-size: 20px;
+}
+
+.side-table {
+  width: 150px;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  right: -170px;
+}
+
+.side-table h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.side-table p {
+  margin: 0;
+  color: #666;
+}
+
+.hide {
+  display: none;
+}
+
+#incorrect {
+  color: red;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+#incorrect_ans {
+  color: red;
+  font-family: "Aldrich", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#correct_ans {
+  color: green;
+  font-family: "Aldrich", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#score {
+  color: rgba(6, 217, 41, 0.899);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #game-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .question {
+    font-size: 20px;
+  }
+
+  .option {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .result {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .side-table {
+    width: 130px;
+    top: 10px;
+    right: -150px;
+  }
+}
+
+@media (max-width: 480px) {
+  #game-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .question {
+    font-size: 18px;
+  }
+
+  .option {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+
+  .result {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .side-table {
+    display: none; /* Hide side table on smaller screens */
+  }
+}

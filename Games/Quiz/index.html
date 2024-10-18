@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> English Final Quiz </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../menubar.css">
+</head>
+<body>
+<!-- Menubar -->
+<div class="logo">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.I_rDXdJ0wGj-BsD4LMbCswHaHa&pid=Api&P=0&h=220" id="logo-img" onclick="toggleMenu()">
+</div>
+<nav class="navbar">
+    <ol class="menu" id="side-menu">
+        <li>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.I_rDXdJ0wGj-BsD4LMbCswHaHa&pid=Api&P=0&h=220" id="logo-img" onclick="toggleMenu()">
+        </li>
+        <div class="main-nav">
+                <li><a class="title" href="#">Home</a></li>
+                <li class="submenu">
+                    <a href="#courses" class="title" class="dropdown-toggle">Courses</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Grammar Lessons</a></li>
+                        <li><a href="#">Vocabulary</a></li>
+                        <li><a href="#">Reading Skills</a></li>
+                        <li><a href="#">Writing Skills</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#tools" class="title" class="dropdown-toggle">Tools</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Word-Dictionary</a></li>
+                        <li><a href="#">Spell Checker</a></li>
+                        <li><a href="#">Multi Language Translator</a></li>
+                        <li><a href="#">Text-to-Speech & Speech-To-Text</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about" class="title">About</a></li>
+            </ol>
+</nav>
+<div id="game-container" class="container">
+    <h1> Quiz </h1>
+    <div id="container" id="container"> </div>
+    <div id="quiz" class="quiz"></div>
+    <div id="result" class="result"></div>
+    <center>
+    <button id="submit" class="button"> Next <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z"/></svg> </button>
+    </center>
+    <button id="retry" class="button hide">Retry</button>
+    <button id="showAnswer" class="button hide">Show Answer</button>
+</div>
+  
+<script src="script.js"></script>
+<script src="../menubar.js"></script>
+</body>
+</html>
