@@ -8,12 +8,12 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.game-container {
+.container {
     background: #ffffff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
     text-align: center;
     margin-top: 60px;
@@ -107,124 +107,42 @@ button:hover {
     transform: translateY(-2px);
 }
 
-.navbar {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    position: fixed;
-    /* Makes the menubar stay fixed */
-    top: 0;
-    /* Position at the top of the page */
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: floralwhite;
-    color: black;
-    margin-bottom : 20px;
-}
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
 
-.logo {
-    display: flex;
-    justify-content: flex-start;
-}
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
 
-.logo ul
-{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
+    .container {
+        padding: 20px;
+        margin-top: 20px;
+    }
 
-#logo-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 25%;
-}
+    h1 {
+        font-size: 24px;
+    }
 
-#logo-text {
-    font-family: "Nerko One", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    margin-left: 15px;
-}
+    .test-wrapper {
+        gap: 15px;
+    }
 
+    .text-display, .input-field, .stats, .stat-item {
+        width: 100%;
+        max-width: 70%;
+    }
 
-/* Menu list styling */
-.menu {
-    color: black;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
+    .text-display {
+        height: auto;
+    }
 
-/* Individual menu items */
-.menu li {
-    margin: 0 20px;
-    position: relative;
-    /* Needed for the submenu */
-    display: inline-block;
-}
+    .stat-item {
+        padding: 10px;
+    }
 
-/* Links inside the menu items */
-.menu a {
-    color: black;
-    text-decoration: none;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: italic;
-    font-size: 25px;
-    padding: 10px 20px;
-    display: block;
-}
-
-/* Hover effect for menu items */
-menu a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
-.submenu .dropdown {
-    display: none;
-    /* Hide submenu by default */
-    position: absolute;
-    top: 100%;
-    /* Position it directly below the parent menu item */
-    left: 0;
-    background-color: black;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Submenu items */
-.submenu .dropdown li {
-    width: 200px;
-    /* Set width for submenu items */
-}
-
-.dropdown a:hover {
-    background-color: rgb(126, 188, 254);
-    color : black;
-    text-decoration: underline;
-}
-
-/* Submenu links */
-.submenu .dropdown a {
-    /* padding: 10px; */
-    background-color: black;
-    color: white;
-    font-family: Verdana;
-    font-weight: 100;
-    font-size: 18px;
-    display: block;
-}
-
-/* Show submenu on hover */
-.submenu:hover .dropdown {
-    display: block;
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
 }
