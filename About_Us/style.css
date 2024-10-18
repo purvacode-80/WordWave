@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=LXGW+WenKai+Mono+TC&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+	background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,233,233,1) 100%);
+   /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(58,154,116,1) 100%); */
+}
+
+/* About Us Section */
+.about-us {
+    text-align: left;
+    padding: 50px;
+    background-color: #e3f2fd; 
+    margin: 50px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-us h1 {
+    font-size: 46px;
+    color: #502d82;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.about-us h2 {
+    font-size: 20px;
+    color: #333;
+}
+  h2 {
+            color: #333;
+    }
+        ul {
+            margin: 18px;
+            padding: 0;
+            list-style-type: disc;
+        }
+        ul li {
+            margin: 10px;
+            color: #333;
+            line-height: 1.2;
+        }
+		
+.about-us strong {
+    font-family: "Graduate", serif;
+    font-weight: 600;
+    font-style: normal;
+    word-spacing: 2px;
+    font-size: 20px;
+    color: crimson;
+}	
+
+.summary {
+    font-size: 20px;
+    color: #3f3e3e;
+    margin: 20px;
+}
+
+.about-us h4{
+    font-family: 'Courier New';
+    font-size: 32px;
+    font-weight : 600;
+    color: rgb(8, 27, 200);
+}
+
+.team {
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing between cards */
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: nowrap; /* Prevents wrapping, keeps all 4 cards in one line */
+}
+
+#team-h2 {
+    font-family: "Baloo Paaji 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;  
+    font-size: 40px;
+    color: rgb(234, 53, 53);
+}
+
+/* User Card Styles */
+.user-card {
+    background-color: #f9f9f9 ;
+    border-radius: 10px;
+    width: 23%; /* Ensures 4 cards fit in one line */
+    padding: 20px;
+	cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border: 2px solid #FF69B4; /* Add border with specific color and thickness */
+    transition: transform 0.2s;
+    margin: 0 10px; /* Adds some spacing between cards */
+}
+
+.user-card img {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(110, 94, 181);
+    padding: 0.4em;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-card h3 {
+    font-size: 24x;
+    color: #fa187a;
+    font-family: "LXGW WenKai Mono TC", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.user-card p {
+	font-weight: 300;
+    text-transform: lowercase;
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: 6px;
+  display: flex;
+ justify-content:space-evenly;
+}
+
+.user-card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+
+.user-card p i {
+    margin-right: 8px; /* Adds space between icon and email text */
+    color: #555 ; /* Gmail red color */
+}
+
+.user-card:hover {
+      background: linear-gradient(#6045ea, #8567f7);
+  color: white;
+}
+
+.card:hover .img-container {
+  transform: scale(1.15);
+	
+}
+
+.user-card:hover {
+    transform: translateY(-10px);
+}
+
+.user-card:hover h3,
+.user-card:hover p,
+.user-card:hover i {
+    color: white; /* Makes h3, p, and icons white on hover */
+}
+
+/* Last Guided Card Styles */
+.last-guided {
+    background-color: #e3c4f5;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 50px auto 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+	border: 2px solid #7B68EE; /* Add border with specific color and thickness */
+    max-width: 600px;
+    text-align: center;
+}
+
+.last-guided img {
+    width: 150px;
+    height: 150px;
+    background-color: #a993ff;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.last-guided h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.last-guided p {
+	 font-weight: 300;
+    font-size: 20px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: 6px;
+  display: flex;
+ justify-content:space-evenly;
+}
+
+.last-guided a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+
+.last-guided:hover {
+      background: linear-gradient(#6045ea, #8567f7);
+  color:white;
+}
+
+.card:hover .img-container {
+  transform: scale(1.15);
+  
+}
+
+.last-guided:hover h3,
+.last-guided:hover p,
+.last-guided:hover i {
+    color: white; /* Makes h3, p, and icons white on hover */
+
+}
+
+footer {
+    background-color: rgb(12, 3, 144);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 0px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .user-card {
+        width: 23%; /* Ensures the cards remain in one row even on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        flex-wrap: wrap; /* Cards will stack on smaller screens *//
+    }
+    .user-card {
+        width: 100%; /* Cards take up full width on small screens */
+        margin-bottom: 20px; /* Adds space between stacked cards */
+    }
+}
