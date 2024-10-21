@@ -1,0 +1,118 @@
+.navbar {
+    /* visibility: hidden; */
+    /* display: none; */
+    /* display: none; */
+    justify-content : space-between;
+    align-items: center;
+    padding: 0px;
+    position: fixed;
+    /* visibility: hidden; */
+    /* width: 0px;
+    height: 0px; */
+    top: 0;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top : 50px;
+    margin: 20px;
+}
+
+#logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+/* .main-nav {
+    margin-top: 20px;
+} */
+
+#side-menu {
+    position: fixed;
+    left: -300px; /* Initially hidden off-screen */
+    top: 0;
+    padding: 10px;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(141, 5, 219);
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+ol li {
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 20px;
+}
+
+.menu .title {
+        background-color: cornsilk;
+        border-radius: 25%;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 25px;
+        padding: 10px 20px;
+        display: block;
+}
+
+/* Make dropdowns position themselves normally and take up space */
+.submenu .dropdown {
+    display: none;
+    position: relative;
+    background-color: rgb(65, 65, 65);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* When hovering over or clicking, show the dropdown */
+.submenu:hover .dropdown,
+.submenu .dropdown-active {
+    display: block;
+}
+
+/* Adjust submenu shifting */
+.submenu {
+    position: relative;
+}
+
+.dropdown a:hover .dropdown{
+    text-decoration: underline;
+}
+
+/* Submenu links */
+.submenu .dropdown a {
+    /* padding: 10px; */
+    color: cornsilk;
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 18px;
+    display: block;
+}
+
+/* Show submenu on hover */
+.submenu:hover .dropdown {
+    display: block;
+}
+
+/* Responsive design for mobile devices */
+@media screen and (max-width: 768px) {
+    #side-menu {
+        width: 200px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+}
