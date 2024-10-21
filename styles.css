@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(213, 232, 245);
+}
+
+header {
+    background-color: #67bff9;
+    color: #0c0c0c;
+    padding: 1em;
+    font-size: 1.4em;
+    text-align: center;
+    font-family: "Graduate", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#search {
+    margin-top: 10px;
+    padding: 0.5em;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.section-container h2 {
+    font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.2em;
+  color: rgb(144, 42, 239);
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .book-list {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.book-section {
+    flex: 1;
+    min-width: 280px;
+    background-color: #e9f0f9;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.book-section h2 {
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+}
+
+.book-item h3 {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+}
+
+.book-item p {
+    margin: 0.5em 0;
+    color: #555;
+}
+
+.book-item button {
+    background-color: #528ff9;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.book-item button:hover {
+    background-color: #45a049;
+}
+
+.read {
+    background-color: #2196F3;
+}
+
+.read:hover {
+    background-color: #1976D2;
+}
+
+.mark-read {
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Responsive styles for smaller screen sizes */
+@media (max-width: 600px) {
+    .book-list {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .book-item {
+        max-width: 100%;
+    }
+
+    #search {
+        width: 90%;
+    }
+}
