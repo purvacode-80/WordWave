@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@87.5,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: rgb(254, 255, 249);
+    color: #333;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: rgb(141, 5, 219);
+    color: #fff;
+    padding: 20px;
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.sidebar_ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.sidebar_ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar_ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    background-color: ivory;
+    color: darkslategray;
+    border-radius: 5px;
+}
+
+.sidebar_ul li a:hover {
+    background-color: darkslategray;
+    color: ivory;
+}
+
+.notes-section {
+    width: 250px;
+}
+
+.notes-section h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#notes {
+    height: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+#saveNotesButton {
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#saveNotesButton:hover {
+    background-color: #3b68fd;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.lesson-section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.lesson-section h1 {
+    margin-bottom: 15px;
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 87.5;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.lesson-section p {
+    margin-bottom: 10px;
+}
+
+.def
+{
+    font-family: Poppins, sans-serif ;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+h3
+{
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+}
+
+.bullets_div
+{
+    list-style-type: circle;
+    margin-left : 40px;
+}
+
+.list_div
+{
+    width : fit-content;
+    background-color: rgb(247, 232, 252);
+    margin : auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.list_bullets
+{
+    padding-left: 20px;
+}
+
+.sub_list
+{
+    margin-left : 25px;
+}
+
+img
+{
+    width: auto;
+    height: auto;
+    max-width: 800px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
