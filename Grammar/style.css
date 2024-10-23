@@ -250,6 +250,8 @@ img
     .notes-section {
         order: 2;
         margin-top: 20px;
+        width: 100%;
+}
     }
 
     main {
