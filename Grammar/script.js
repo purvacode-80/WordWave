@@ -14,3 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Notes saved successfully!');
     });
 });
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.sidebar').classList.toggle('show');
+});
