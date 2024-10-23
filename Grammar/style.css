@@ -27,6 +27,15 @@ body {
     flex: 1;
 }
 
+h2 {
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 30px;
+  font-style: normal;
+    color:blue;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -114,12 +123,6 @@ main {
 header {
     margin-bottom: 20px;
     text-align: center;
- font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-size: 30px;
-  font-style: normal;
-    color:blue;
 }
 
 .lesson-section {
@@ -247,8 +250,6 @@ img
     .notes-section {
         order: 2;
         margin-top: 20px;
-        width: 100%;
-}
     }
 
     main {
