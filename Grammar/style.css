@@ -188,3 +188,65 @@ img
     margin-bottom: 10px;
     border-radius: 10px;
 }
+
+/* Styling for the menu toggle button */
+.menu-toggle {
+    display: none;
+    background-color: #333;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+/* Hide sidebar by default on mobile */
+.sidebar {
+    display: block;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s ease-in-out;
+}
+
+.sidebar.show {
+    left: 0;
+}
+
+/* Adjust notes section placement */
+.notes-section {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .notes-section {
+        order: 2;
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+}
