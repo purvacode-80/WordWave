@@ -254,4 +254,15 @@ img
     main {
         order: 1;
     }
+
+#notes {
+    height: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 }
