@@ -347,6 +347,10 @@ i {
     /* text-decoration: underline; */
 }
 
+.modules a {
+    color : cornsilk;
+}
+
 .course:hover {
     transform: translateY(-10px);
 }
