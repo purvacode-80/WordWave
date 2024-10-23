@@ -198,30 +198,7 @@ img
     border-radius: 10px;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .sidebar {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .notes-section {
-        order: 2;
-        width: 100%;
-    }
-
-    main {
-        order: 1;
-    }
-
-    /* Styling for the menu toggle button */
+/* Styling for the menu toggle button */
 .menu-toggle {
     display: none;
     background-color: #333;
@@ -238,25 +215,43 @@ img
 
 /* Hide sidebar by default on mobile */
 .sidebar {
-    display: block;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    transition: left 0.3s ease-in-out;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .sidebar.show {
-    left: 0;
+    transform: translateX(0);
 }
 
-/* Adjust notes section placement */
-.notes-section {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Only show toggle button on mobile devices */
+    }
 
+    .sidebar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    /* Adjusting the notes section to come after the main content on mobile */
+    .notes-section {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    main {
+        order: 1;
+    }
 }
