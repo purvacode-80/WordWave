@@ -252,7 +252,13 @@ img
     main {
         order: 1;
     }
+    
     body {
         font-size : 16px;
+    }
+
+    img {
+        max-width: 300px;
+        height: 100%;
     }
 }
